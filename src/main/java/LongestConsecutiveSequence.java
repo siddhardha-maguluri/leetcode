@@ -44,7 +44,6 @@ public class LongestConsecutiveSequence {
 	        return result;
 	    }
 
-	
 	public static int longestConsecutive(int[] nums) {
 
         if(nums.length == 0)
@@ -84,9 +83,8 @@ public class LongestConsecutiveSequence {
         entryList.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
         
         System.out.println(map);
-        
 
-        return new int[2];
+        return new int[k];
     }
 	
 	public static boolean isPalindrome(String s) {
@@ -99,23 +97,7 @@ public class LongestConsecutiveSequence {
         }
         return true;
     }
-	
-	public static int findMin(int[] nums) {    
-        int low = 0;
-        int high = nums.length - 1;
-        
-        while (low < high) {
-            int mid = low + (high - low) / 2;     
-            if (nums[mid] > nums[high]) {
-                low = mid + 1;
-            } else {
-                high = mid;
-            }
-        }    
 
-        return nums[low];
-    }
-	
 	public static int evalRPN(String[] tokens) {
 		
         Stack<String> st = new Stack();

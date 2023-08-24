@@ -1,9 +1,11 @@
+package Arrays;
+
 import java.util.Hashtable;
 
 public class ContainsDuplicate {
 	
 	 public boolean containsDuplicate(int[] nums) {
-		 Hashtable<Integer, Integer> ht = new Hashtable<Integer, Integer>();
+		 Hashtable<Integer, Integer> ht = new Hashtable();
 		 
 		 /* loop through the array and check if the current number is
 		  * already there in the hashtable or not. if it is there, get the value
