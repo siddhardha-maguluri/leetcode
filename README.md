@@ -52,7 +52,7 @@ Approach:
 ### 20-Sep-2023:
 Wanted to focus on Divide-and-Conquer pattern. So, tried the following 2 problems today.
 
-1. [https://leetcode.com/problems/number-of-1-bits/](Number of 1 bits)
+1. [Number of 1 bits](https://leetcode.com/problems/number-of-1-bits/)
 
 <b>Problem statement</b>:
 Write a function that takes the binary representation of an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
@@ -63,7 +63,7 @@ my first intuition is to convert the given number to binary string and count the
 after reading up about bit manipulation a bit, got to know performing bitwise and(&) operator of number n and n-1 flips the least significant bit. we can 
 count the no of 1 bits by performing bitwise & till the number is not equal to zero.
 
-2. [https://leetcode.com/problems/majority-element/](Majority Element)
+2. [Majority Element](https://leetcode.com/problems/majority-element/)
 
 <b>Problem statement</b>:
 Given an array nums of size n, return the majority element.
@@ -84,4 +84,4 @@ with n/2 and if it is more than n/2, then we can simply return the key, which is
 
 <b>Combine:</b> After finding the majority element in each subarray, check if any element is a majority element in the combined array. If there is a majority element, return it;
 
-[https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm](Boyer-Moore majority vote Algorithm) which gives us majority element in an array in linear time and O(1) space complexity.
+[Boyer-Moore majority vote Algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm) which gives us majority element in an array in linear time and O(1) space complexity.
