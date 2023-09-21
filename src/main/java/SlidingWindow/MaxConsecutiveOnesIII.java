@@ -1,5 +1,7 @@
 package SlidingWindow;
 
+import java.util.PriorityQueue;
+
 public class MaxConsecutiveOnesIII {
 
     public static int longestOnes(int[] nums, int k) {

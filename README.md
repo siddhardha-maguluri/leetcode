@@ -32,3 +32,56 @@ There are two main types of dynamic programming problems:
 There are two main approaches to solving dynamic programming problems: 
  1. top-down: The top-down approach involves solving the problem recursively by breaking it down into smaller subproblems. (Memoization).
  2. bottom-up: The bottom-up approach involves solving the problem iteratively by starting with the smallest subproblems and building up to the larger ones. (Tabulation method).
+
+
+### 18-Aug-2023
+
+[https://leetcode.com/problems/find-smallest-common-element-in-all-rows/description/](https://leetcode.com/problems/find-smallest-common-element-in-all-rows/description/)
+
+<b>Problem statement</b>:
+Given an m x n matrix mat where every row is sorted in strictly increasing order, return the smallest common element in all rows.
+If there is no common element, return -1.
+
+<b>Sample Input/Output</b>: </br>
+<b>Input:</b> mat = [[1,2,3,4,5],[2,4,5,8,10],[3,5,7,9,11],[1,3,5,7,9]] <br>
+Output: 5
+
+Approach:
+
+
+### 20-Sep-2023:
+Wanted to focus on Divide-and-Conquer pattern. So, tried the following 2 problems today.
+
+1. [https://leetcode.com/problems/number-of-1-bits/](Number of 1 bits)
+
+<b>Problem statement</b>:
+Write a function that takes the binary representation of an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+
+<b>Initial approach:</b>
+my first intuition is to convert the given number to binary string and count the number of 1 in it.
+
+after reading up about bit manipulation a bit, got to know performing bitwise and(&) operator of number n and n-1 flips the least significant bit. we can 
+count the no of 1 bits by performing bitwise & till the number is not equal to zero.
+
+2. [https://leetcode.com/problems/majority-element/](Majority Element)
+
+<b>Problem statement</b>:
+Given an array nums of size n, return the majority element.
+
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+<b>Basic Approach:</b>
+
+my first intuition is create a hashmap with each key corresponding to element in an array
+and value corresponding to count of the element. then by iterating the hashmap, we can compare each value
+with n/2 and if it is more than n/2, then we can simply return the key, which is the majority element.
+
+<b>Divide and Conquer approach</b>
+
+<b>Divide:</b> Split the array into 2 equal-sized (or approximately equal-sized) subarrays.
+
+<b>Conquer:</b> Find the majority element in each subarray recursively.
+
+<b>Combine:</b> After finding the majority element in each subarray, check if any element is a majority element in the combined array. If there is a majority element, return it;
+
+[https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm](Boyer-Moore majority vote Algorithm) which gives us majority element in an array in linear time and O(1) space complexity.

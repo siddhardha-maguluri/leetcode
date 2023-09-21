@@ -1,5 +1,4 @@
-import java.util.Enumeration;
-import java.util.Hashtable;
+import java.util.*;
 
 public class SingleNumber {
 	
@@ -37,7 +36,6 @@ public class SingleNumber {
 		int[] nums = new int[] {2,2,1};
 		SingleNumber sn = new SingleNumber();
 		System.out.println(sn.singleNumber(nums));
-
 	}
 
 }
